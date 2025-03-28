@@ -74,7 +74,8 @@ class SlackBot extends Adapter
         @presenceSub()
 
     # Start logging in
-    @client.connect()
+    # @client.connect()
+    @emit "connected"
 
   ###*
   # Hubot is sending a message to Slack
